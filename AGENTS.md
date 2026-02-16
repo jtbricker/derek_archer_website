@@ -89,6 +89,12 @@ npm run preview    # Preview production build locally
 
 The site deploys automatically via `.github/workflows/deploy.yml` on every push to `main`. The workflow uses `withastro/action@v5` to build and `actions/deploy-pages@v4` to deploy. The custom domain is configured via `public/CNAME`.
 
+## Session Management
+
+- **"Wrap up" or "save context"**: When the user says either of these phrases, update memory files with all important context from the session before ending. This includes research findings, decisions made, current status, and anything that would be needed to resume work.
+- **Proactive saves**: If the session has been long and productive, proactively suggest saving context even if not asked.
+- Memory files live in the auto memory directory. See `MEMORY.md` for the index of topic files.
+
 ## Things to Avoid
 
 - Do not add a `tailwind.config.js` — Tailwind v4 is configured in CSS via `@theme`.

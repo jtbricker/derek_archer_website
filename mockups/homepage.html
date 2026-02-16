@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Derek B. Archer, PhD — Homepage Mockup</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Design Tokens ── */
+    :root {
+      --navy-950: #0a1628;
+      --navy-900: #0f2240;
+      --navy-800: #162d50;
+      --navy-700: #1e3a5f;
+      --navy-600: #2a4a73;
+      --teal: #14b8a6;
+      --teal-dim: rgba(20, 184, 166, 0.15);
+      --gold: #f59e0b;
+      --gold-dim: rgba(245, 158, 11, 0.15);
+      --purple: #8b5cf6;
+      --purple-dim: rgba(139, 92, 246, 0.15);
+      --slate-100: #f1f5f9;
+      --slate-300: #cbd5e1;
+      --slate-400: #94a3b8;
+      --slate-600: #475569;
+      --font-heading: 'Inter', system-ui, sans-serif;
+      --font-body: 'Source Sans 3', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    body {
+      background: var(--navy-950);
+      color: var(--slate-300);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Header ── */
+    header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+      background: rgba(10, 22, 40, 0.8);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(30, 58, 95, 0.5);
+    }
+    .header-inner {
+      max-width: 1200px; margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .site-name {
+      font-family: var(--font-heading);
+      font-weight: 700; font-size: 1.1rem;
+      color: var(--slate-100);
+    }
+    .site-name span { color: var(--teal); }
+    nav a {
+      font-family: var(--font-heading);
+      font-size: 0.875rem; font-weight: 500;
+      color: var(--slate-400);
+      text-decoration: none;
+      margin-left: 2rem;
+      transition: color 0.2s;
+      position: relative;
+    }
+    nav a:hover, nav a.active { color: var(--teal); }
+    nav a.active::after {
+      content: ''; position: absolute;
+      bottom: -4px; left: 0; right: 0;
+      height: 2px; background: var(--teal); border-radius: 1px;
+    }
+
+    /* ── Section containers ── */
+    .section { max-width: 1200px; margin: 0 auto; padding: 5rem 1.5rem; }
+    .section-sm { max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem; }
+
+    /* ── Hero ── */
+    .hero {
+      min-height: 100vh;
+      display: flex; align-items: center;
+      position: relative; overflow: hidden;
+      padding-top: 64px;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 70% 40%, rgba(20, 184, 166, 0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 50% at 20% 80%, rgba(139, 92, 246, 0.04) 0%, transparent 70%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0; opacity: 0.03;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .hero-content { position: relative; z-index: 1; }
+    .hero-label {
+      font-family: var(--font-mono); font-size: 0.8rem;
+      color: var(--teal); letter-spacing: 0.1em;
+      text-transform: uppercase; margin-bottom: 1.25rem;
+    }
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 800; line-height: 1.1;
+      color: var(--slate-100);
+      margin-bottom: 1rem;
+    }
+    .hero h1 .gradient {
+      background: linear-gradient(135deg, var(--teal), var(--purple));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-subtitle {
+      font-size: 1.25rem; color: var(--slate-400);
+      max-width: 640px; margin-bottom: 0.75rem;
+    }
+    .hero-affiliation {
+      font-size: 1rem; color: var(--slate-400);
+      margin-bottom: 2.5rem;
+    }
+    .hero-affiliation strong { color: var(--gold); font-weight: 600; }
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.75rem 1.5rem; border-radius: 8px;
+      font-family: var(--font-heading); font-size: 0.9rem; font-weight: 600;
+      text-decoration: none; transition: all 0.2s;
+      cursor: pointer; border: none;
+    }
+    .btn-primary {
+      background: var(--teal); color: var(--navy-950);
+    }
+    .btn-primary:hover { background: #0d9488; transform: translateY(-1px); }
+    .btn-outline {
+      background: transparent; color: var(--teal);
+      border: 1px solid rgba(20, 184, 166, 0.4);
+    }
+    .btn-outline:hover {
+      background: var(--teal-dim);
+      border-color: var(--teal);
+    }
+
+    /* ── Metrics Banner ── */
+    .metrics-banner {
+      background: var(--navy-900);
+      border-top: 1px solid rgba(30, 58, 95, 0.5);
+      border-bottom: 1px solid rgba(30, 58, 95, 0.5);
+    }
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+    .metric {
+      text-align: center; padding: 1.5rem 0;
+    }
+    .metric-value {
+      font-family: var(--font-heading);
+      font-size: 2rem; font-weight: 800;
+      color: var(--teal);
+    }
+    .metric-label {
+      font-size: 0.85rem; color: var(--slate-400);
+      margin-top: 0.25rem;
+    }
+
+    /* ── Section Headings ── */
+    .section-heading {
+      font-family: var(--font-heading);
+      font-size: 1.75rem; font-weight: 700;
+      color: var(--slate-100);
+      margin-bottom: 0.5rem;
+    }
+    .section-subheading {
+      color: var(--slate-400); font-size: 1.05rem;
+      margin-bottom: 2.5rem; max-width: 600px;
+    }
+    .section-eyebrow {
+      font-family: var(--font-mono); font-size: 0.75rem;
+      color: var(--teal); letter-spacing: 0.08em;
+      text-transform: uppercase; margin-bottom: 0.75rem;
+    }
+
+    /* ── Cards ── */
+    .card {
+      background: rgba(15, 34, 64, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(30, 58, 95, 0.5);
+      border-radius: 12px;
+      padding: 1.75rem;
+      transition: all 0.3s;
+    }
+    .card:hover {
+      border-color: rgba(20, 184, 166, 0.3);
+      box-shadow: 0 8px 30px rgba(20, 184, 166, 0.05);
+      transform: translateY(-2px);
+    }
+    .card-icon {
+      width: 48px; height: 48px;
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .card-icon-teal { background: var(--teal-dim); }
+    .card-icon-purple { background: var(--purple-dim); }
+    .card-icon-gold { background: var(--gold-dim); }
+    .card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.125rem; font-weight: 600;
+      color: var(--slate-100);
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 0.95rem; color: var(--slate-400);
+      line-height: 1.5;
+    }
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    /* ── Publications Section ── */
+    .pub-item {
+      padding: 1.25rem 1.5rem;
+      border-left: 2px solid var(--navy-700);
+      margin-bottom: 1rem;
+      transition: border-color 0.2s;
+    }
+    .pub-item:hover { border-color: var(--teal); }
+    .pub-title {
+      font-family: var(--font-heading);
+      font-size: 1rem; font-weight: 600;
+      color: var(--slate-100);
+      margin-bottom: 0.25rem;
+    }
+    .pub-meta {
+      font-size: 0.85rem; color: var(--slate-400);
+    }
+    .pub-meta .journal { color: var(--teal); font-weight: 500; }
+    .pub-meta .highlight { color: var(--slate-100); font-weight: 600; }
+    .pub-badge {
+      display: inline-block;
+      font-family: var(--font-mono); font-size: 0.7rem;
+      padding: 0.15rem 0.5rem; border-radius: 4px;
+      background: var(--gold-dim); color: var(--gold);
+      margin-left: 0.5rem; vertical-align: middle;
+    }
+
+    /* ── Collaborations / Projects ── */
+    .collab-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .collab-card {
+      background: rgba(15, 34, 64, 0.4);
+      border: 1px solid rgba(30, 58, 95, 0.4);
+      border-radius: 10px; padding: 1.25rem;
+      text-align: center;
+      transition: all 0.3s;
+    }
+    .collab-card:hover {
+      border-color: rgba(245, 158, 11, 0.3);
+      background: rgba(15, 34, 64, 0.6);
+    }
+    .collab-acronym {
+      font-family: var(--font-heading);
+      font-size: 1.5rem; font-weight: 800;
+      color: var(--gold); margin-bottom: 0.25rem;
+    }
+    .collab-name {
+      font-size: 0.85rem; color: var(--slate-400);
+    }
+    .collab-role {
+      font-family: var(--font-mono); font-size: 0.7rem;
+      color: var(--slate-600); margin-top: 0.5rem;
+    }
+
+    /* ── CTA Section ── */
+    .cta-section {
+      background: linear-gradient(135deg, var(--navy-900), var(--navy-800));
+      border-top: 1px solid rgba(30, 58, 95, 0.5);
+      border-bottom: 1px solid rgba(30, 58, 95, 0.5);
+    }
+    .cta-content {
+      text-align: center;
+      max-width: 600px; margin: 0 auto;
+    }
+    .cta-content h2 {
+      font-family: var(--font-heading);
+      font-size: 1.75rem; font-weight: 700;
+      color: var(--slate-100); margin-bottom: 0.75rem;
+    }
+    .cta-content p { margin-bottom: 1.5rem; }
+    .cta-links { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid rgba(30, 58, 95, 0.5);
+      padding: 3rem 1.5rem 2rem;
+    }
+    .footer-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+    }
+    .footer-brand h3 {
+      font-family: var(--font-heading);
+      font-size: 1rem; font-weight: 700;
+      color: var(--slate-100); margin-bottom: 0.5rem;
+    }
+    .footer-brand p { font-size: 0.85rem; color: var(--slate-400); }
+    .footer-links h4 {
+      font-family: var(--font-heading);
+      font-size: 0.8rem; font-weight: 600;
+      color: var(--slate-400); text-transform: uppercase;
+      letter-spacing: 0.05em; margin-bottom: 0.75rem;
+    }
+    .footer-links a {
+      display: block; font-size: 0.9rem;
+      color: var(--slate-400); text-decoration: none;
+      margin-bottom: 0.5rem; transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--teal); }
+    .footer-bottom {
+      max-width: 1200px; margin: 2rem auto 0;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(30, 58, 95, 0.3);
+      font-size: 0.8rem; color: var(--slate-600);
+      text-align: center;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--navy-700), transparent);
+      margin: 0;
+    }
+
+    /* ── Animations ── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate { animation: fadeInUp 0.7s ease-out forwards; }
+    .delay-1 { animation-delay: 0.1s; opacity: 0; }
+    .delay-2 { animation-delay: 0.2s; opacity: 0; }
+    .delay-3 { animation-delay: 0.3s; opacity: 0; }
+    .delay-4 { animation-delay: 0.4s; opacity: 0; }
+    .delay-5 { animation-delay: 0.5s; opacity: 0; }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      nav { display: none; }
+      .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .hero h1 { font-size: 2.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-inner">
+      <div class="site-name">Derek B. Archer<span>,</span> PhD</div>
+      <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Research</a>
+        <a href="#">Publications</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="section hero-content">
+      <div class="hero-label animate delay-1">Neuroimaging &amp; Computational Genetics</div>
+      <h1 class="animate delay-2">
+        Derek B. Archer<span class="gradient">, PhD</span>
+      </h1>
+      <p class="hero-subtitle animate delay-3">
+        Investigating the neural and genetic architecture of aging and
+        neurodegeneration through advanced neuroimaging, diffusion MRI,
+        and computational genomics.
+      </p>
+      <p class="hero-affiliation animate delay-4">
+        Assistant Professor of Neurology &middot;
+        <strong>Vanderbilt University Medical Center</strong>
+      </p>
+      <div class="hero-btns animate delay-5">
+        <a href="#research" class="btn btn-primary">Explore Research &rarr;</a>
+        <a href="#publications" class="btn btn-outline">Publications</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── METRICS BANNER ── -->
+  <section class="metrics-banner">
+    <div class="section-sm">
+      <div class="metrics-grid">
+        <div class="metric">
+          <div class="metric-value">2,060+</div>
+          <div class="metric-label">Citations</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">19</div>
+          <div class="metric-label">First / Last Author Papers</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">7+</div>
+          <div class="metric-label">Harmonized Cohorts</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">NIA</div>
+          <div class="metric-label">K-Award Recipient</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── RESEARCH AREAS ── -->
+  <section class="section" id="research">
+    <div class="section-eyebrow">Research Focus</div>
+    <h2 class="section-heading">Areas of Investigation</h2>
+    <p class="section-subheading">
+      Bridging neuroimaging and genomics to understand brain aging and
+      neurodegeneration at scale.
+    </p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon card-icon-teal">&#129504;</div>
+        <h3>Neuroimaging Biomarkers</h3>
+        <p>Identifying in-vivo structural brain changes associated with neurodegeneration using diffusion MRI and advanced imaging techniques.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon card-icon-purple">&#129516;</div>
+        <h3>Computational Genetics</h3>
+        <p>Leveraging genome-wide association studies and polygenic risk scores to map genetic susceptibility to brain structural changes.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon card-icon-teal">&#128268;</div>
+        <h3>White Matter Neurodegeneration</h3>
+        <p>Investigating how vascular risk, genetics, and AD pathology drive white matter decline, with multi-site MRI harmonization for large-scale studies.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon card-icon-gold">&#128187;</div>
+        <h3>AI-Driven Brain Signatures</h3>
+        <p>Applying deep learning to large-scale imaging and genetics datasets to build predictive brain age and disease signatures.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── PUBLICATIONS ── -->
+  <section class="section" id="publications">
+    <div class="section-eyebrow">Selected Work</div>
+    <h2 class="section-heading">Recent Publications</h2>
+    <p class="section-subheading">
+      Highlights from recent first- and last-author publications.
+    </p>
+
+    <div class="pub-item">
+      <div class="pub-title">
+        White Matter Abnormalities and Cognition in Aging and Alzheimer Disease
+        <span class="pub-badge">Last Author</span>
+      </div>
+      <div class="pub-meta">
+        Peter C, Sathe A, ... Hohman TJ, <span class="highlight">Archer DB</span>.
+        <span class="journal">JAMA Neurology</span> (2025)
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-title">
+        The effect of Alzheimer's disease genetic factors on limbic white matter microstructure
+        <span class="pub-badge">Last Author</span>
+      </div>
+      <div class="pub-meta">
+        Lorenz A, Sathe A, ... Hohman TJ, <span class="highlight">Archer DB</span>.
+        <span class="journal">Alzheimer's &amp; Dementia</span> (2025)
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-title">
+        Longitudinal change in memory performance as a strong endophenotype for Alzheimer's disease
+        <span class="pub-badge">1st Author</span>
+      </div>
+      <div class="pub-meta">
+        <span class="highlight">Archer DB</span>, Eissman JM, ... Dumitrescu L, Hohman TJ.
+        <span class="journal">Alzheimer's &amp; Dementia</span> (2024)
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-title">
+        Development and Validation of the Automated Imaging Differentiation in Parkinsonism (AID-P)
+        <span class="pub-badge">1st Author</span>
+      </div>
+      <div class="pub-meta">
+        <span class="highlight">Archer DB</span>, Bricker JT, ... Okun MS, Vaillancourt DE.
+        <span class="journal">The Lancet Digital Health</span> (2019)
+      </div>
+    </div>
+
+    <div class="pub-item">
+      <div class="pub-title">
+        A widespread visually-sensitive functional network relates to symptoms in essential tremor
+        <span class="pub-badge">1st Author</span>
+      </div>
+      <div class="pub-meta">
+        <span class="highlight">Archer DB</span>, Coombes SA, ... Wagle Shukla A, Vaillancourt DE.
+        <span class="journal">Brain</span> (2018)
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 2rem;">
+      <a href="#" class="btn btn-outline">View All Publications &rarr;</a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── PROJECTS ── -->
+  <section class="section">
+    <div class="section-eyebrow">Collaborations</div>
+    <h2 class="section-heading">Projects &amp; Affiliations</h2>
+    <p class="section-subheading">
+      Contributing to large-scale multi-site research initiatives in aging and
+      neurodegeneration.
+    </p>
+    <div class="collab-grid">
+      <div class="collab-card">
+        <div class="collab-acronym">VMAP</div>
+        <div class="collab-name">Vanderbilt Memory &amp; Aging Project</div>
+        <div class="collab-role">Co-Investigator</div>
+      </div>
+      <div class="collab-card">
+        <div class="collab-acronym">VADRC</div>
+        <div class="collab-name">Vanderbilt Alzheimer's Disease Research Center</div>
+        <div class="collab-role">Co-Investigator</div>
+      </div>
+      <div class="collab-card">
+        <div class="collab-acronym">CNT</div>
+        <div class="collab-name">Computational Neurogenomics Team</div>
+        <div class="collab-role">Member</div>
+      </div>
+      <div class="collab-card">
+        <div class="collab-acronym">VALIANT</div>
+        <div class="collab-name">Vanderbilt University Initiative</div>
+        <div class="collab-role">Member</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="cta-section">
+    <div class="section">
+      <div class="cta-content">
+        <h2>Get in Touch</h2>
+        <p>
+          Interested in collaboration, postdoctoral opportunities, or learning
+          more about our research?
+        </p>
+        <div class="cta-links">
+          <a href="mailto:derek.archer@vumc.org" class="btn btn-primary">Contact &rarr;</a>
+          <a href="https://scholar.google.com/citations?user=InzF7XUAAAAJ" class="btn btn-outline" target="_blank">Google Scholar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <h3>Derek B. Archer, PhD</h3>
+        <p>
+          Assistant Professor of Neurology<br />
+          Vanderbilt University Medical Center<br />
+          Nashville, TN
+        </p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Research</a>
+        <a href="#">Publications</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>External</h4>
+        <a href="https://scholar.google.com/citations?user=InzF7XUAAAAJ" target="_blank">Google Scholar</a>
+        <a href="https://www.vumc.org/neurology/person/derek-b-archer-phd" target="_blank">VUMC Neurology</a>
+        <a href="https://www.vumc.org/vmac/person/derek-b-archer-phd" target="_blank">VMAC</a>
+        <a href="https://www.vumc.org/cnt/person/derek-archer-phd" target="_blank">CNT</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Derek B. Archer. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

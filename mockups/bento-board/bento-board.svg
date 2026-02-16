@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Arial, sans-serif">
+  <defs>
+    <linearGradient id="amber-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#1c1917"/>
+
+  <!-- Title bar -->
+  <text x="600" y="30" text-anchor="middle" fill="#78716c" font-size="11" letter-spacing="3">BENTO BOARD — HOMEPAGE WIREFRAME</text>
+
+  <!-- Grid container - starts at y=50, padded 24px -->
+  <!-- 4 columns: each ~276px wide with 16px gaps -->
+  <!-- 3 rows: row1=260px, row2=260px, row3=200px with 16px gaps -->
+
+  <!-- ==================== ROW 1 ==================== -->
+
+  <!-- IDENTITY TILE (2 cols, 2 rows) - top left -->
+  <rect x="24" y="50" width="568" height="536" rx="16" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <!-- Headshot circle -->
+  <circle cx="520" cy="110" r="40" fill="#44403c" stroke="#78716c" stroke-width="1"/>
+  <text x="520" y="115" text-anchor="middle" fill="#78716c" font-size="10">Photo</text>
+  <!-- Name -->
+  <text x="56" y="120" fill="#fafaf9" font-size="42" font-weight="800" letter-spacing="-1">Derek B. Archer</text>
+  <text x="56" y="155" fill="#f59e0b" font-size="20" font-weight="600">, PhD</text>
+  <!-- Title -->
+  <text x="56" y="195" fill="#d6d3d1" font-size="14">Assistant Professor of Neurology</text>
+  <text x="56" y="215" fill="#78716c" font-size="13">Vanderbilt University Medical Center</text>
+  <!-- Divider -->
+  <line x1="56" y1="235" x2="200" y2="235" stroke="#44403c" stroke-width="1"/>
+  <!-- Research summary -->
+  <text x="56" y="265" fill="#a8a29e" font-size="12" font-style="italic">
+    <tspan x="56" dy="0">Investigating the neuroimaging and genetic signatures</tspan>
+    <tspan x="56" dy="18">of neurodegenerative diseases through computational</tspan>
+    <tspan x="56" dy="18">approaches and large-scale cohort studies.</tspan>
+  </text>
+  <!-- Keywords -->
+  <rect x="56" y="330" width="130" height="26" rx="13" fill="none" stroke="#f59e0b" stroke-width="1"/>
+  <text x="121" y="347" text-anchor="middle" fill="#f59e0b" font-size="10" letter-spacing="1">NEUROIMAGING</text>
+  <rect x="196" y="330" width="100" height="26" rx="13" fill="none" stroke="#10b981" stroke-width="1"/>
+  <text x="246" y="347" text-anchor="middle" fill="#10b981" font-size="10" letter-spacing="1">GENETICS</text>
+  <rect x="306" y="330" width="60" height="26" rx="13" fill="none" stroke="#0ea5e9" stroke-width="1"/>
+  <text x="336" y="347" text-anchor="middle" fill="#0ea5e9" font-size="10" letter-spacing="1">AI</text>
+  <!-- CTA buttons -->
+  <rect x="56" y="520" width="110" height="36" rx="18" fill="#f59e0b"/>
+  <text x="111" y="543" text-anchor="middle" fill="#1c1917" font-size="12" font-weight="600">View CV</text>
+  <rect x="180" y="520" width="140" height="36" rx="18" fill="none" stroke="#78716c" stroke-width="1"/>
+  <text x="250" y="543" text-anchor="middle" fill="#d6d3d1" font-size="12">Google Scholar</text>
+
+  <!-- METRIC TILE 1 - Citations -->
+  <rect x="608" y="50" width="276" height="260" rx="16" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <text x="746" y="155" text-anchor="middle" fill="#f59e0b" font-size="56" font-weight="700" font-family="monospace">2,060+</text>
+  <text x="746" y="185" text-anchor="middle" fill="#78716c" font-size="11" letter-spacing="2">CITATIONS</text>
+  <!-- Mini sparkline -->
+  <polyline points="660,220 680,215 700,210 720,200 740,195 760,180 780,170 800,155 820,140" fill="none" stroke="#f59e0b" stroke-width="2" stroke-opacity="0.4"/>
+
+  <!-- METRIC TILE 2 - Publications -->
+  <rect x="900" y="50" width="276" height="122" rx="16" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <text x="1038" y="115" text-anchor="middle" fill="#10b981" font-size="42" font-weight="700" font-family="monospace">45+</text>
+  <text x="1038" y="140" text-anchor="middle" fill="#78716c" font-size="11" letter-spacing="2">PUBLICATIONS</text>
+
+  <!-- METRIC TILE 3 - Cohorts -->
+  <rect x="900" y="188" width="130" height="122" rx="16" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <text x="965" y="250" text-anchor="middle" fill="#0ea5e9" font-size="42" font-weight="700" font-family="monospace">5</text>
+  <text x="965" y="275" text-anchor="middle" fill="#78716c" font-size="10" letter-spacing="1">COHORTS</text>
+
+  <!-- METRIC TILE 4 - NIH Funded -->
+  <rect x="1046" y="188" width="130" height="122" rx="16" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <text x="1111" y="250" text-anchor="middle" fill="#f59e0b" font-size="22" font-weight="700" font-family="monospace">NIH</text>
+  <text x="1111" y="275" text-anchor="middle" fill="#78716c" font-size="10" letter-spacing="1">FUNDED</text>
+
+  <!-- ==================== ROW 2 (right side) ==================== -->
+
+  <!-- FEATURED RESEARCH TILE (2 cols, overlapping with metrics) -->
+  <rect x="608" y="326" width="568" height="260" rx="16" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <!-- Colored top border -->
+  <rect x="608" y="326" width="568" height="4" rx="2" fill="#f59e0b"/>
+  <text x="640" y="365" fill="#78716c" font-size="10" letter-spacing="2" font-family="monospace">FEATURED RESEARCH</text>
+  <text x="640" y="400" fill="#fafaf9" font-size="22" font-weight="700">Neuroimaging Biomarkers for</text>
+  <text x="640" y="428" fill="#fafaf9" font-size="22" font-weight="700">Neurodegenerative Disease</text>
+  <text x="640" y="460" fill="#a8a29e" font-size="13">
+    <tspan x="640" dy="0">Using advanced MRI techniques and machine learning to</tspan>
+    <tspan x="640" dy="18">identify structural and functional brain signatures that</tspan>
+    <tspan x="640" dy="18">predict disease onset and progression.</tspan>
+  </text>
+  <!-- Abstract brain network illustration -->
+  <circle cx="1060" cy="440" r="30" fill="none" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.3"/>
+  <circle cx="1090" cy="410" r="20" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.3"/>
+  <circle cx="1030" cy="410" r="15" fill="none" stroke="#0ea5e9" stroke-width="1" stroke-opacity="0.3"/>
+  <circle cx="1060" cy="380" r="12" fill="none" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.2"/>
+  <line x1="1060" y1="440" x2="1090" y2="410" stroke="#44403c" stroke-width="1"/>
+  <line x1="1060" y1="440" x2="1030" y2="410" stroke="#44403c" stroke-width="1"/>
+  <line x1="1090" y1="410" x2="1060" y2="380" stroke="#44403c" stroke-width="1"/>
+  <!-- CTA -->
+  <text x="640" y="555" fill="#f59e0b" font-size="13" font-weight="600">Explore Research →</text>
+  <!-- Pagination dots -->
+  <circle cx="1120" cy="555" r="4" fill="#f59e0b"/>
+  <circle cx="1135" cy="555" r="4" fill="#44403c"/>
+  <circle cx="1150" cy="555" r="4" fill="#44403c"/>
+
+  <!-- ==================== ROW 3 ==================== -->
+
+  <!-- RESEARCH AREA TILE 1 -->
+  <rect x="24" y="602" width="180" height="180" rx="16" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <rect x="24" y="602" width="180" height="4" rx="2" fill="#10b981"/>
+  <text x="56" y="645" fill="#fafaf9" font-size="14" font-weight="700">Computational</text>
+  <text x="56" y="663" fill="#fafaf9" font-size="14" font-weight="700">Genetics</text>
+  <text x="56" y="690" fill="#78716c" font-size="11">GWAS, polygenic</text>
+  <text x="56" y="705" fill="#78716c" font-size="11">risk scores, gene</text>
+  <text x="56" y="720" fill="#78716c" font-size="11">expression analysis</text>
+  <text x="56" y="755" fill="#10b981" font-size="11">Learn more →</text>
+
+  <!-- RESEARCH AREA TILE 2 -->
+  <rect x="220" y="602" width="180" height="180" rx="16" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <rect x="220" y="602" width="180" height="4" rx="2" fill="#0ea5e9"/>
+  <text x="252" y="645" fill="#fafaf9" font-size="14" font-weight="700">White Matter</text>
+  <text x="252" y="663" fill="#fafaf9" font-size="14" font-weight="700">Neurodegeneration</text>
+  <text x="252" y="690" fill="#78716c" font-size="11">Diffusion MRI,</text>
+  <text x="252" y="705" fill="#78716c" font-size="11">tract-based analysis,</text>
+  <text x="252" y="720" fill="#78716c" font-size="11">brain connectivity</text>
+  <text x="252" y="755" fill="#0ea5e9" font-size="11">Learn more →</text>
+
+  <!-- RECENT PAPERS TILE (wide) -->
+  <rect x="416" y="602" width="468" height="180" rx="16" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <text x="448" y="635" fill="#78716c" font-size="10" letter-spacing="2" font-family="monospace">RECENT PUBLICATIONS</text>
+  <!-- Paper 1 -->
+  <circle cx="448" cy="670" r="4" fill="#f59e0b"/>
+  <text x="464" y="674" fill="#fafaf9" font-size="12" font-weight="600">White matter hyperintensities and Alzheimer disease...</text>
+  <text x="464" y="690" fill="#f59e0b" font-size="10">JAMA Neurology</text>
+  <text x="600" y="690" fill="#78716c" font-size="10">2025</text>
+  <!-- Paper 2 -->
+  <circle cx="448" cy="714" r="4" fill="#10b981"/>
+  <text x="464" y="718" fill="#fafaf9" font-size="12" font-weight="600">Brain-predicted age difference and cognition...</text>
+  <text x="464" y="734" fill="#10b981" font-size="10">Neurobiology of Aging</text>
+  <text x="620" y="734" fill="#78716c" font-size="10">2024</text>
+  <!-- View all -->
+  <text x="448" y="768" fill="#f59e0b" font-size="12" font-weight="600">View All Publications →</text>
+
+  <!-- RESEARCH AREA TILE 3 -->
+  <rect x="900" y="602" width="180" height="180" rx="16" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <rect x="900" y="602" width="180" height="4" rx="2" fill="#f59e0b"/>
+  <text x="932" y="645" fill="#fafaf9" font-size="14" font-weight="700">AI-Derived</text>
+  <text x="932" y="663" fill="#fafaf9" font-size="14" font-weight="700">Brain Signatures</text>
+  <text x="932" y="690" fill="#78716c" font-size="11">Deep learning for</text>
+  <text x="932" y="705" fill="#78716c" font-size="11">brain age prediction</text>
+  <text x="932" y="720" fill="#78716c" font-size="11">and biomarkers</text>
+  <text x="932" y="755" fill="#f59e0b" font-size="11">Learn more →</text>
+
+  <!-- ==================== FLOATING NAV PILL ==================== -->
+  <rect x="1100" y="58" width="80" height="32" rx="16" fill="#292524" stroke="#44403c" stroke-width="1"/>
+  <!-- Hamburger icon -->
+  <line x1="1125" y1="69" x2="1155" y2="69" stroke="#d6d3d1" stroke-width="2"/>
+  <line x1="1125" y1="75" x2="1155" y2="75" stroke="#d6d3d1" stroke-width="2"/>
+  <line x1="1125" y1="81" x2="1155" y2="81" stroke="#d6d3d1" stroke-width="2"/>
+
+  <!-- ==================== MOBILE PREVIEW ==================== -->
+  <!-- Phone outline -->
+  <rect x="24" y="810" width="140" height="70" rx="8" fill="#1c1917" stroke="#44403c" stroke-width="1"/>
+  <text x="94" y="835" text-anchor="middle" fill="#78716c" font-size="8">Mobile: tiles stack</text>
+  <text x="94" y="848" text-anchor="middle" fill="#78716c" font-size="8">vertically + tab bar</text>
+  <!-- Mini tiles -->
+  <rect x="32" y="855" width="28" height="4" rx="1" fill="#f59e0b" opacity="0.5"/>
+  <rect x="64" y="855" width="28" height="4" rx="1" fill="#10b981" opacity="0.5"/>
+  <rect x="96" y="855" width="28" height="4" rx="1" fill="#0ea5e9" opacity="0.5"/>
+  <rect x="128" y="855" width="28" height="4" rx="1" fill="#f59e0b" opacity="0.5"/>
+
+  <!-- Design label -->
+  <text x="600" y="890" text-anchor="middle" fill="#44403c" font-size="10" letter-spacing="2">BENTO BOARD — NO HERO, ALL DASHBOARD</text>
+</svg>

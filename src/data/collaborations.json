@@ -1,0 +1,26 @@
+[
+  {
+    "acronym": "VMAP",
+    "name": "Vanderbilt Memory & Aging Project",
+    "role": "Investigator",
+    "description": "Longitudinal cohort study of cognitive aging and early Alzheimer's disease."
+  },
+  {
+    "acronym": "VADRC",
+    "name": "Vanderbilt Alzheimer's Disease Research Center",
+    "role": "Core Member",
+    "description": "NIA-funded center advancing understanding and treatment of Alzheimer's disease."
+  },
+  {
+    "acronym": "CNT",
+    "name": "Center for Cognitive Neurology & Therapeutics",
+    "role": "Faculty",
+    "description": "Multidisciplinary research center focused on cognitive disorders."
+  },
+  {
+    "acronym": "VALIANT",
+    "name": "Vanderbilt Lineages of Alzheimer's Neurodegeneration Trajectories",
+    "role": "Investigator",
+    "description": "Multi-cohort study of neurodegeneration trajectories across diverse populations."
+  }
+]

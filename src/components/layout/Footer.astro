@@ -1,0 +1,76 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="border-t" style="background: var(--color-midnight-surface); border-color: var(--color-midnight-border);">
+  <div class="mx-auto max-w-6xl px-6 py-12">
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Brand -->
+      <div>
+        <p class="text-lg font-bold" style="color: var(--color-text-heading); font-family: var(--font-heading);">
+          Derek B. Archer, PhD
+        </p>
+        <p class="mt-2 text-sm" style="color: var(--color-text-muted);">
+          Assistant Professor of Neurology<br />
+          Vanderbilt University Medical Center
+        </p>
+      </div>
+
+      <!-- Pages -->
+      <div>
+        <p class="mb-3 text-xs font-semibold uppercase tracking-wider" style="color: var(--color-text-muted); font-family: var(--font-mono);">
+          Pages
+        </p>
+        <ul class="space-y-2">
+          {["Home", "About", "Research", "Publications", "Contact"].map((page) => (
+            <li>
+              <a
+                href={page === "Home" ? "/" : `/${page.toLowerCase()}/`}
+                class="text-sm transition-colors duration-200 hover:underline"
+                style="color: var(--color-text-body);"
+              >
+                {page}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- External Links -->
+      <div>
+        <p class="mb-3 text-xs font-semibold uppercase tracking-wider" style="color: var(--color-text-muted); font-family: var(--font-mono);">
+          Profiles
+        </p>
+        <ul class="space-y-2">
+          <li>
+            <a href="https://scholar.google.com/citations?user=InzF7XUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="text-sm transition-colors duration-200 hover:underline" style="color: var(--color-text-body);">
+              Google Scholar ↗
+            </a>
+          </li>
+          <li>
+            <a href="https://www.vumc.org/neurology/person/derek-b-archer-phd" target="_blank" rel="noopener noreferrer" class="text-sm transition-colors duration-200 hover:underline" style="color: var(--color-text-body);">
+              VUMC Neurology ↗
+            </a>
+          </li>
+          <li>
+            <a href="https://www.vumc.org/vmac/person/derek-b-archer-phd" target="_blank" rel="noopener noreferrer" class="text-sm transition-colors duration-200 hover:underline" style="color: var(--color-text-body);">
+              VMAC ↗
+            </a>
+          </li>
+          <li>
+            <a href="https://www.vumc.org/cnt/person/derek-archer-phd" target="_blank" rel="noopener noreferrer" class="text-sm transition-colors duration-200 hover:underline" style="color: var(--color-text-body);">
+              CNT ↗
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="mt-10 border-t pt-6 text-center" style="border-color: var(--color-midnight-border);">
+      <p class="text-xs" style="color: var(--color-text-muted);">
+        &copy; {currentYear} Derek B. Archer. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>

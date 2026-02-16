@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "title": "White Matter Abnormalities and Cognition in Aging and Alzheimer Disease",
+    "authors": "Peter C, Sathe A, Shashikumar N, ... Hohman TJ, Archer DB",
+    "journal": "JAMA Neurology",
+    "year": 2025,
+    "doi": "10.1001/jamaneurol.2025.1601",
+    "pmid": "40513084",
+    "role": "last",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "The effect of Alzheimer's disease genetic factors on limbic white matter microstructure",
+    "authors": "Lorenz A, Sathe A, Zaras D, ... Hohman TJ, Archer DB",
+    "journal": "Alzheimer's & Dementia",
+    "year": 2025,
+    "doi": "10.1002/alz.70130",
+    "pmid": "40219815",
+    "role": "last",
+    "featured": false
+  },
+  {
+    "id": 3,
+    "title": "Sex and APOE ε4 allele differences in longitudinal white matter microstructure in multiple cohorts of aging and Alzheimer's disease",
+    "authors": "Peterson A, Sathe A, Zaras D, ... Hohman TJ, Archer DB",
+    "journal": "Alzheimer's & Dementia",
+    "year": 2025,
+    "doi": "10.1002/alz.14343",
+    "pmid": "39711105",
+    "role": "last",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Longitudinal change in memory performance as a strong endophenotype for Alzheimer's disease",
+    "authors": "Archer DB, Eissman JM, Mukherjee S, ... Dumitrescu L, Hohman TJ",
+    "journal": "Alzheimer's & Dementia",
+    "year": 2024,
+    "doi": "10.1002/alz.13508",
+    "pmid": "37985223",
+    "role": "first",
+    "featured": true
+  },
+  {
+    "id": 5,
+    "title": "Free-water: A promising structural biomarker for cognitive decline in aging and mild cognitive impairment",
+    "authors": "Sathe A, Yang Y, ... Jefferson AL, Archer DB",
+    "journal": "Imaging Neuroscience",
+    "year": 2024,
+    "doi": "10.1162/imag_a_00293",
+    "pmid": "39512598",
+    "role": "last",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "A deep neural network estimation of brain age is sensitive to cognitive impairment and decline",
+    "authors": "Yang Y, Sathe A, ... Jefferson AL, Archer DB",
+    "journal": "Pacific Symposium on Biocomputing",
+    "year": 2024,
+    "doi": null,
+    "pmid": "38160276",
+    "role": "last",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "Leveraging longitudinal diffusion MRI data to quantify differences in white matter microstructural decline in normal and abnormal aging",
+    "authors": "Archer DB, Schilling K, Shashikumar N, ... Resnick SM, Hohman TJ",
+    "journal": "Alzheimer's & Dementia: DADM",
+    "year": 2023,
+    "doi": "10.1002/dad2.12468",
+    "pmid": "37780863",
+    "role": "first",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "title": "White matter microstructural metrics are sensitively associated with clinical staging in Alzheimer's disease",
+    "authors": "Yang Y, Schilling K, ... Hohman TJ, Archer DB",
+    "journal": "Alzheimer's & Dementia: DADM",
+    "year": 2023,
+    "doi": "10.1002/dad2.12425",
+    "pmid": "37213219",
+    "role": "last",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "The relationship between white matter microstructure and self-perceived cognitive decline",
+    "authors": "Archer DB, Moore EE, Pamidimukkala U, ... Hohman TJ, Jefferson AL, Gifford KA",
+    "journal": "NeuroImage: Clinical",
+    "year": 2021,
+    "doi": "10.1016/j.nicl.2021.102794",
+    "pmid": "34479171",
+    "role": "first",
+    "featured": false
+  },
+  {
+    "id": 10,
+    "title": "Free-water metrics in medial temporal lobe white matter tract projections relate to longitudinal cognitive decline",
+    "authors": "Archer DB, Moore EE, ... Jefferson AL, Hohman TJ",
+    "journal": "Neurobiology of Aging",
+    "year": 2020,
+    "doi": "10.1016/j.neurobiolaging.2020.05.001",
+    "pmid": "32502831",
+    "role": "first",
+    "featured": true
+  },
+  {
+    "id": 11,
+    "title": "Magnetic Resonance Imaging and Neurofilament Light in the Differentiation of Parkinsonism",
+    "authors": "Archer DB, Mitchell T, ... Vaillancourt DE",
+    "journal": "Movement Disorders",
+    "year": 2020,
+    "doi": "10.1002/mds.28060",
+    "pmid": "32357259",
+    "role": "first",
+    "featured": false
+  },
+  {
+    "id": 12,
+    "title": "Development and Validation of the Automated Imaging Differentiation in Parkinsonism (AID-P): A Multi-Site Machine Learning Study",
+    "authors": "Archer DB, Bricker JT, Chu WT, ... Vaillancourt DE",
+    "journal": "The Lancet Digital Health",
+    "year": 2019,
+    "doi": "10.1016/S2589-7500(19)30105-0",
+    "pmid": "32259098",
+    "role": "first",
+    "featured": true
+  },
+  {
+    "id": 13,
+    "title": "Development of a transcallosal tractography template and its application to dementia",
+    "authors": "Archer DB, Coombes SA, McFarland NR, DeKosky ST, Vaillancourt DE",
+    "journal": "NeuroImage",
+    "year": 2019,
+    "doi": "10.1016/j.neuroimage.2019.06.065",
+    "pmid": "31260838",
+    "role": "first",
+    "featured": false
+  },
+  {
+    "id": 14,
+    "title": "A widespread visually-sensitive functional network relates to symptoms in essential tremor",
+    "authors": "Archer DB, Coombes SA, Chu WT, ... Vaillancourt DE",
+    "journal": "Brain",
+    "year": 2018,
+    "doi": "10.1093/brain/awx338",
+    "pmid": "29293948",
+    "role": "first",
+    "featured": true
+  },
+  {
+    "id": 15,
+    "title": "A Template and Probabilistic Atlas of the Human Sensorimotor Tracts using Diffusion MRI",
+    "authors": "Archer DB, Vaillancourt DE, Coombes SA",
+    "journal": "Cerebral Cortex",
+    "year": 2018,
+    "doi": "10.1093/cercor/bhx066",
+    "pmid": "28334314",
+    "role": "first",
+    "featured": false
+  },
+  {
+    "id": 16,
+    "title": "Visual feedback alters force control and functional activity in the visuomotor network after stroke",
+    "authors": "Archer DB, Kang N, Misra G, Marble S, Patten C, Coombes SA",
+    "journal": "NeuroImage: Clinical",
+    "year": 2017,
+    "doi": "10.1016/j.nicl.2017.11.012",
+    "pmid": "29201639",
+    "role": "first",
+    "featured": false
+  },
+  {
+    "id": 17,
+    "title": "Free-water and free-water corrected fractional anisotropy in primary and premotor corticospinal tracts in chronic stroke",
+    "authors": "Archer DB, Patten C, Coombes SA",
+    "journal": "Human Brain Mapping",
+    "year": 2017,
+    "doi": "10.1002/hbm.23681",
+    "pmid": "28590584",
+    "role": "first",
+    "featured": false
+  },
+  {
+    "id": 18,
+    "title": "Microstructural properties of premotor pathways predict visuomotor performance in chronic stroke",
+    "authors": "Archer DB, Misra G, Patten C, Coombes SA",
+    "journal": "Human Brain Mapping",
+    "year": 2016,
+    "doi": "10.1002/hbm.23155",
+    "pmid": "26920656",
+    "role": "first",
+    "featured": false
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "totalCitations": 2060,
+  "hIndex": 25,
+  "totalPublications": 45,
+  "cohortsLed": 4,
+  "yearly": [
+    { "year": 2016, "citations": 15 },
+    { "year": 2017, "citations": 45 },
+    { "year": 2018, "citations": 110 },
+    { "year": 2019, "citations": 195 },
+    { "year": 2020, "citations": 290 },
+    { "year": 2021, "citations": 335 },
+    { "year": 2022, "citations": 350 },
+    { "year": 2023, "citations": 380 },
+    { "year": 2024, "citations": 340 }
+  ]
+}

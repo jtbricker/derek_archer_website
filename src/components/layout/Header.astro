@@ -1,0 +1,99 @@
+---
+const currentPath = Astro.url.pathname;
+
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/about/", label: "About" },
+  { href: "/research/", label: "Research" },
+  { href: "/publications/", label: "Publications" },
+  { href: "/contact/", label: "Contact" },
+];
+
+function isActive(href: string): boolean {
+  if (href === "/") return currentPath === "/" || currentPath === "";
+  return currentPath.startsWith(href);
+}
+---
+
+<header
+  class="fixed top-0 left-0 right-0 z-50 border-b transition-all duration-300"
+  style="background: rgba(10, 22, 40, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-color: var(--color-midnight-border);"
+  id="site-header"
+>
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <!-- Logo / Name -->
+    <a href="/" class="text-lg font-bold tracking-tight" style="color: var(--color-text-heading); font-family: var(--font-heading);">
+      D<span style="color: var(--color-accent-teal);">.</span>Archer
+    </a>
+
+    <!-- Desktop Nav -->
+    <ul class="hidden items-center gap-8 md:flex">
+      {navLinks.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class:list={[
+              "text-sm font-medium transition-colors duration-200",
+              isActive(link.href)
+                ? "border-b-2"
+                : "hover:opacity-100",
+            ]}
+            style={isActive(link.href)
+              ? `color: var(--color-accent-teal); border-color: var(--color-accent-teal);`
+              : `color: var(--color-text-muted);`
+            }
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <!-- Mobile Hamburger -->
+    <button
+      class="flex flex-col gap-1.5 md:hidden"
+      id="mobile-menu-btn"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+    >
+      <span class="block h-0.5 w-6 transition-all duration-300" style="background: var(--color-text-body);" id="hamburger-top"></span>
+      <span class="block h-0.5 w-6 transition-all duration-300" style="background: var(--color-text-body);" id="hamburger-mid"></span>
+      <span class="block h-0.5 w-4 transition-all duration-300" style="background: var(--color-text-body);" id="hamburger-bot"></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div
+    class="hidden border-t md:hidden"
+    style="background: rgba(10, 22, 40, 0.95); border-color: var(--color-midnight-border);"
+    id="mobile-menu"
+  >
+    <ul class="flex flex-col px-6 py-4 gap-4">
+      {navLinks.map((link) => (
+        <li>
+          <a
+            href={link.href}
+            class="block text-base font-medium transition-colors duration-200"
+            style={isActive(link.href)
+              ? `color: var(--color-accent-teal);`
+              : `color: var(--color-text-muted);`
+            }
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</header>
+
+<script>
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
+
+  btn?.addEventListener("click", () => {
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", String(!expanded));
+    menu?.classList.toggle("hidden");
+  });
+</script>

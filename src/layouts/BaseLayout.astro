@@ -1,0 +1,21 @@
+---
+import SEOHead from "../components/layout/SEOHead.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <SEOHead title={title} description={description} />
+  </head>
+  <body class="min-h-screen">
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,63 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  canonicalURL?: string;
+}
+
+const {
+  title,
+  description = "Derek B. Archer, PhD — Assistant Professor of Neurology at Vanderbilt University Medical Center. Research in neuroimaging, computational genetics, and AI-derived brain signatures.",
+  canonicalURL = Astro.url.href,
+} = Astro.props;
+
+const siteName = "Derek B. Archer, PhD";
+const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="generator" content={Astro.generator} />
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalURL} />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:site_name" content={siteName} />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- JSON-LD Person Schema -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Derek B. Archer",
+  "honorificSuffix": "PhD",
+  "jobTitle": "Assistant Professor of Neurology",
+  "affiliation": {
+    "@type": "Organization",
+    "name": "Vanderbilt University Medical Center"
+  },
+  "url": "https://www.derekarcher.com",
+  "email": "derek.archer@vumc.org",
+  "sameAs": [
+    "https://scholar.google.com/citations?user=InzF7XUAAAAJ&hl=en",
+    "https://www.vumc.org/neurology/person/derek-b-archer-phd"
+  ]
+})} />

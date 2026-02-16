@@ -1,0 +1,109 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import publications from "../data/publications.json";
+import citations from "../data/citations.json";
+
+// Group by year
+const years = [...new Set(publications.map((p) => p.year))].sort((a, b) => b - a);
+const pubsByYear = years.map((year) => ({
+  year,
+  pubs: publications.filter((p) => p.year === year),
+}));
+---
+
+<PageLayout title="Publications" description="Selected first- and last-author publications by Derek B. Archer, PhD.">
+  <section class="py-20">
+    <div class="mx-auto max-w-4xl px-6">
+      <p class="mb-3 text-xs font-medium uppercase tracking-[0.2em]" style="color: var(--color-accent-teal); font-family: var(--font-mono);">
+        Publications
+      </p>
+      <h1 class="mb-4 text-4xl font-bold md:text-5xl">Selected Works</h1>
+      <p class="mb-8 text-lg" style="color: var(--color-text-muted);">
+        First- and last-author publications. For the full list, see <a href="https://scholar.google.com/citations?user=InzF7XUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="underline" style="color: var(--color-accent-teal);">Google Scholar</a>.
+      </p>
+
+      <!-- Metrics -->
+      <div class="glass-card mb-12 grid grid-cols-2 gap-6 p-6 md:grid-cols-4">
+        {[
+          { value: citations.totalCitations.toLocaleString() + "+", label: "Citations" },
+          { value: citations.totalPublications + "+", label: "Publications" },
+          { value: publications.filter((p) => p.role === "first").length.toString(), label: "First Author" },
+          { value: publications.filter((p) => p.role === "last").length.toString(), label: "Last Author" },
+        ].map((m) => (
+          <div class="text-center">
+            <p class="glow-teal text-2xl font-bold" style="color: var(--color-accent-teal); font-family: var(--font-heading);">
+              {m.value}
+            </p>
+            <p class="mt-1 text-xs uppercase tracking-wider" style="color: var(--color-text-muted); font-family: var(--font-mono);">
+              {m.label}
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <!-- Publication List by Year -->
+      {pubsByYear.map(({ year, pubs }) => (
+        <div class="mb-12">
+          <h2 class="mb-6 text-xl font-bold" style="color: var(--color-text-heading); font-family: var(--font-heading);">
+            {year}
+          </h2>
+          <div class="space-y-6">
+            {pubs.map((pub) => (
+              <article
+                class="border-l-2 py-3 pl-6"
+                style={`border-color: ${pub.featured ? "var(--color-accent-teal)" : "var(--color-midnight-border)"};`}
+              >
+                <div class="mb-2 flex flex-wrap items-center gap-2">
+                  <span
+                    class="rounded-full px-2.5 py-0.5 text-xs font-semibold"
+                    style={pub.role === "first"
+                      ? "background: rgba(20, 184, 166, 0.15); color: var(--color-accent-teal);"
+                      : "background: rgba(245, 158, 11, 0.15); color: var(--color-accent-gold);"
+                    }
+                  >
+                    {pub.role === "first" ? "1st Author" : "Last Author"}
+                  </span>
+                  {pub.featured && (
+                    <span
+                      class="rounded-full px-2.5 py-0.5 text-xs font-semibold"
+                      style="background: rgba(139, 92, 246, 0.15); color: var(--color-accent-purple);"
+                    >
+                      Featured
+                    </span>
+                  )}
+                </div>
+                <h3 class="mb-1 text-base font-semibold leading-snug" style="color: var(--color-text-heading);">
+                  {pub.doi ? (
+                    <a
+                      href={`https://doi.org/${pub.doi}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="transition-colors duration-200 hover:underline"
+                    >
+                      {pub.title}
+                    </a>
+                  ) : (
+                    pub.title
+                  )}
+                </h3>
+                <p class="text-sm" style="color: var(--color-text-muted);">
+                  {pub.authors}
+                </p>
+                <div class="mt-1 flex flex-wrap items-center gap-3">
+                  <span class="text-sm font-medium" style="color: var(--color-accent-teal);">
+                    {pub.journal}
+                  </span>
+                  {pub.doi && (
+                    <span class="text-xs" style="color: var(--color-text-muted); font-family: var(--font-mono);">
+                      DOI: {pub.doi}
+                    </span>
+                  )}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</PageLayout>

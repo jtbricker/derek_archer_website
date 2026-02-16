@@ -1,0 +1,43 @@
+{
+  "name": "Derek B. Archer, PhD",
+  "title": "Assistant Professor of Neurology",
+  "institution": "Vanderbilt University Medical Center",
+  "location": "Nashville, TN",
+  "email": "derek.archer@vumc.org",
+  "tagline": "Neuroimaging & Computational Genetics",
+  "summary": "I develop advanced neuroimaging and machine learning methods to identify brain signatures of neurodegeneration. My work combines diffusion MRI, computational genetics, and AI to understand how aging and disease reshape the brain's white matter architecture.",
+  "education": [
+    {
+      "degree": "PhD",
+      "field": "Applied Physiology & Kinesiology",
+      "institution": "University of Florida",
+      "year": 2019
+    },
+    {
+      "degree": "MS",
+      "field": "Applied Physiology & Kinesiology",
+      "institution": "University of Florida",
+      "year": 2016
+    }
+  ],
+  "positions": [
+    {
+      "title": "Assistant Professor of Neurology",
+      "institution": "Vanderbilt University Medical Center",
+      "start": 2021,
+      "end": null
+    },
+    {
+      "title": "Postdoctoral Research Fellow",
+      "institution": "Vanderbilt Memory & Alzheimer's Center",
+      "start": 2019,
+      "end": 2021
+    }
+  ],
+  "links": {
+    "googleScholar": "https://scholar.google.com/citations?user=InzF7XUAAAAJ&hl=en",
+    "vumcNeurology": "https://www.vumc.org/neurology/person/derek-b-archer-phd",
+    "vmac": "https://www.vumc.org/vmac/person/derek-b-archer-phd",
+    "cnt": "https://www.vumc.org/cnt/person/derek-archer-phd"
+  }
+}

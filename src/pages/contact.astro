@@ -1,0 +1,75 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import cv from "../data/cv.json";
+
+const profileLinks = [
+  { label: "Google Scholar", url: cv.links.googleScholar },
+  { label: "VUMC Neurology", url: cv.links.vumcNeurology },
+  { label: "Vanderbilt Memory & Alzheimer's Center", url: cv.links.vmac },
+  { label: "Center for Cognitive Neurology & Therapeutics", url: cv.links.cnt },
+];
+---
+
+<PageLayout title="Contact" description="Get in touch with Derek B. Archer, PhD at Vanderbilt University Medical Center.">
+  <section class="py-20">
+    <div class="mx-auto max-w-2xl px-6">
+      <p class="mb-3 text-xs font-medium uppercase tracking-[0.2em]" style="color: var(--color-accent-teal); font-family: var(--font-mono);">
+        Contact
+      </p>
+      <h1 class="mb-4 text-4xl font-bold md:text-5xl">Get in Touch</h1>
+      <p class="mb-12 text-lg" style="color: var(--color-text-muted);">
+        Interested in collaboration, lab opportunities, or have questions about my research? I'd love to hear from you.
+      </p>
+
+      <div class="space-y-6">
+        <!-- Email -->
+        <div class="glass-card p-6">
+          <p class="mb-1 text-xs font-medium uppercase tracking-wider" style="color: var(--color-text-muted); font-family: var(--font-mono);">
+            Email
+          </p>
+          <a
+            href={`mailto:${cv.email}`}
+            class="text-lg font-medium transition-colors duration-200 hover:underline"
+            style="color: var(--color-accent-teal);"
+          >
+            {cv.email}
+          </a>
+        </div>
+
+        <!-- Office -->
+        <div class="glass-card p-6">
+          <p class="mb-1 text-xs font-medium uppercase tracking-wider" style="color: var(--color-text-muted); font-family: var(--font-mono);">
+            Office
+          </p>
+          <p class="text-lg font-medium" style="color: var(--color-text-heading);">
+            {cv.institution}
+          </p>
+          <p class="text-sm" style="color: var(--color-text-muted);">
+            Department of Neurology · {cv.location}
+          </p>
+        </div>
+
+        <!-- Profiles -->
+        <div class="glass-card p-6">
+          <p class="mb-3 text-xs font-medium uppercase tracking-wider" style="color: var(--color-text-muted); font-family: var(--font-mono);">
+            Institutional Profiles
+          </p>
+          <div class="space-y-2">
+            {profileLinks.map(({ label, url }) => (
+              <a
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center justify-between rounded-lg p-2 text-sm transition-colors duration-200 hover:bg-white/5"
+                style="color: var(--color-text-body);"
+              >
+                <span>{label}</span>
+                <span style="color: var(--color-accent-teal);">↗</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</PageLayout>

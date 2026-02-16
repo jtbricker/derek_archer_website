@@ -1,0 +1,34 @@
+[
+  {
+    "id": "neuroimaging",
+    "title": "Neuroimaging Biomarkers",
+    "icon": "🧠",
+    "color": "teal",
+    "shortDescription": "MRI techniques and machine learning to identify brain signatures of neurodegeneration.",
+    "description": "Developing advanced diffusion MRI methods — including free-water imaging, tract-based analysis, and multi-site harmonization — to detect early white matter changes in aging and Alzheimer's disease. These biomarkers enable earlier detection and tracking of neurodegeneration before clinical symptoms emerge."
+  },
+  {
+    "id": "genetics",
+    "title": "Computational Genetics",
+    "icon": "🧬",
+    "color": "purple",
+    "shortDescription": "GWAS and polygenic risk scores linking genetic variation to brain structure.",
+    "description": "Integrating genome-wide association studies, polygenic risk scores, and gene expression analyses with neuroimaging data to uncover how genetic variation shapes brain aging trajectories. This work identifies genetic modifiers of white matter integrity and cognitive decline risk."
+  },
+  {
+    "id": "white-matter",
+    "title": "White Matter Neurodegeneration",
+    "icon": "🔬",
+    "color": "teal",
+    "shortDescription": "Diffusion MRI and tract-based analysis of white matter changes in aging and disease.",
+    "description": "Characterizing patterns of white matter microstructural decline across the adult lifespan using longitudinal diffusion MRI. This research maps how specific white matter tracts deteriorate in normal aging versus Alzheimer's disease, stroke, and movement disorders."
+  },
+  {
+    "id": "ai-signatures",
+    "title": "AI-Derived Brain Signatures",
+    "icon": "🤖",
+    "color": "gold",
+    "shortDescription": "Deep learning for brain age prediction and biomarker discovery.",
+    "description": "Building deep neural networks that estimate biological brain age from MRI scans. The gap between predicted and chronological brain age serves as a sensitive biomarker for cognitive impairment, enabling personalized risk assessment and clinical trial stratification."
+  }
+]

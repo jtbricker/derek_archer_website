@@ -1,0 +1,88 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+import cv from "../data/cv.json";
+
+const profileLinks = [
+  { label: "Google Scholar", url: cv.links.googleScholar },
+  { label: "VUMC Neurology", url: cv.links.vumcNeurology },
+  { label: "VMAC", url: cv.links.vmac },
+  { label: "CNT", url: cv.links.cnt },
+];
+---
+
+<PageLayout title="About" description="Education, career timeline, and research background of Derek B. Archer, PhD.">
+  <section class="py-20">
+    <div class="mx-auto max-w-4xl px-6">
+      <p class="mb-3 text-xs font-medium uppercase tracking-[0.2em]" style="color: var(--color-accent-teal); font-family: var(--font-mono);">
+        About
+      </p>
+      <h1 class="mb-8 text-4xl font-bold md:text-5xl">{cv.name}</h1>
+
+      <div class="glass-card p-8 mb-12">
+        <p class="text-lg leading-relaxed" style="color: var(--color-text-body);">
+          {cv.summary}
+        </p>
+      </div>
+
+      <!-- Positions -->
+      <div class="mb-12">
+        <h2 class="mb-6 text-2xl font-bold">Positions</h2>
+        <div class="space-y-6">
+          {cv.positions.map((pos) => (
+            <div class="border-l-2 pl-6 py-2" style="border-color: var(--color-accent-teal);">
+              <p class="text-lg font-semibold" style="color: var(--color-text-heading);">
+                {pos.title}
+              </p>
+              <p class="text-sm" style="color: var(--color-accent-gold);">
+                {pos.institution}
+              </p>
+              <p class="mt-1 text-xs" style="color: var(--color-text-muted); font-family: var(--font-mono);">
+                {pos.start} — {pos.end ?? "Present"}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="mb-12">
+        <h2 class="mb-6 text-2xl font-bold">Education</h2>
+        <div class="space-y-6">
+          {cv.education.map((edu) => (
+            <div class="border-l-2 pl-6 py-2" style="border-color: var(--color-accent-purple);">
+              <p class="text-lg font-semibold" style="color: var(--color-text-heading);">
+                {edu.degree} in {edu.field}
+              </p>
+              <p class="text-sm" style="color: var(--color-accent-gold);">
+                {edu.institution}
+              </p>
+              <p class="mt-1 text-xs" style="color: var(--color-text-muted); font-family: var(--font-mono);">
+                {edu.year}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- External Profiles -->
+      <div>
+        <h2 class="mb-6 text-2xl font-bold">Profiles</h2>
+        <div class="grid gap-4 md:grid-cols-2">
+          {profileLinks.map(({ label, url }) => (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="glass-card flex items-center justify-between p-4 transition-all duration-300 hover:-translate-y-0.5"
+            >
+              <span class="text-sm font-medium" style="color: var(--color-text-heading);">
+                {label}
+              </span>
+              <span style="color: var(--color-accent-teal);">↗</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+</PageLayout>

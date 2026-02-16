@@ -1,0 +1,24 @@
+---
+import PageLayout from "../layouts/PageLayout.astro";
+---
+
+<PageLayout title="404 — Page Not Found">
+  <section class="flex min-h-[60vh] items-center justify-center py-20">
+    <div class="text-center px-6">
+      <p class="glow-teal text-8xl font-bold" style="color: var(--color-accent-teal); font-family: var(--font-heading);">
+        404
+      </p>
+      <h1 class="mt-4 text-2xl font-bold">Page Not Found</h1>
+      <p class="mt-2 text-base" style="color: var(--color-text-muted);">
+        The page you're looking for doesn't exist or has been moved.
+      </p>
+      <a
+        href="/"
+        class="mt-8 inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all duration-200 hover:shadow-lg"
+        style="background: var(--color-accent-teal); color: var(--color-midnight-base);"
+      >
+        ← Back to Home
+      </a>
+    </div>
+  </section>
+</PageLayout>

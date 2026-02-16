@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 2400" width="1200" height="2400">
+  <defs>
+    <linearGradient id="wp-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1e40af"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- BG -->
+  <rect width="1200" height="2400" fill="#fafbfc"/>
+
+  <!-- ===== HEADER ===== -->
+  <rect width="1200" height="64" fill="#ffffff"/>
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="80" y="40" fill="#0f172a" font-family="Georgia, serif" font-size="18" font-weight="700">Derek B. Archer</text>
+  <text x="260" y="40" fill="#94a3b8" font-family="Georgia, serif" font-size="14" font-style="italic">PhD</text>
+  <text x="700" y="40" fill="#1e40af" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="500">Home</text>
+  <line x1="700" y1="46" x2="734" y2="46" stroke="#1e40af" stroke-width="2"/>
+  <text x="780" y="40" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="13">About</text>
+  <text x="850" y="40" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="13">Research</text>
+  <text x="945" y="40" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="13">Publications</text>
+  <text x="1070" y="40" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="13">Contact</text>
+
+  <!-- ===== HERO ===== -->
+  <rect x="0" y="64" width="1200" height="480" fill="#ffffff"/>
+  <!-- Thin accent line at top -->
+  <rect x="0" y="64" width="1200" height="4" fill="url(#wp-accent)"/>
+
+  <!-- Left column: text -->
+  <text x="80" y="180" fill="#0f172a" font-family="Georgia, serif" font-size="48" font-weight="700">Derek B. Archer</text>
+  <text x="80" y="230" fill="#1e40af" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="500" letter-spacing="1">ASSISTANT PROFESSOR OF NEUROLOGY</text>
+  <text x="80" y="260" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="15">Vanderbilt University Medical Center · Nashville, TN</text>
+
+  <line x1="80" y1="285" x2="200" y2="285" stroke="#1e40af" stroke-width="2"/>
+
+  <text x="80" y="320" fill="#334155" font-family="Georgia, serif" font-size="17" font-style="italic">Investigating the neural and genetic architecture</text>
+  <text x="80" y="348" fill="#334155" font-family="Georgia, serif" font-size="17" font-style="italic">of aging and neurodegeneration through advanced</text>
+  <text x="80" y="376" fill="#334155" font-family="Georgia, serif" font-size="17" font-style="italic">neuroimaging, diffusion MRI, and computational genomics.</text>
+
+  <!-- Right: placeholder for headshot -->
+  <rect x="860" y="140" width="260" height="320" rx="4" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="990" y="290" fill="#cbd5e1" font-family="Inter, system-ui, sans-serif" font-size="14" text-anchor="middle">Photo</text>
+  <text x="990" y="310" fill="#cbd5e1" font-family="Inter, system-ui, sans-serif" font-size="12" text-anchor="middle">Headshot</text>
+
+  <!-- CTA buttons -->
+  <rect x="80" y="410" width="160" height="42" rx="6" fill="#1e40af"/>
+  <text x="118" y="436" fill="#ffffff" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">View CV →</text>
+  <rect x="260" y="410" width="180" height="42" rx="6" fill="none" stroke="#1e40af" stroke-width="1.5"/>
+  <text x="296" y="436" fill="#1e40af" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600">Google Scholar ↗</text>
+
+  <!-- ===== METRICS ===== -->
+  <rect x="0" y="544" width="1200" height="90" fill="#f8fafc"/>
+  <line x1="0" y1="544" x2="1200" y2="544" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="0" y1="634" x2="1200" y2="634" stroke="#e2e8f0" stroke-width="1"/>
+
+  <text x="200" y="585" fill="#0f172a" font-family="Georgia, serif" font-size="28" font-weight="700" text-anchor="middle">2,060+</text>
+  <text x="200" y="610" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12" text-anchor="middle">Citations</text>
+  <line x1="350" y1="565" x2="350" y2="620" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="500" y="585" fill="#0f172a" font-family="Georgia, serif" font-size="28" font-weight="700" text-anchor="middle">19</text>
+  <text x="500" y="610" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12" text-anchor="middle">First / Last Author</text>
+  <line x1="650" y1="565" x2="650" y2="620" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="800" y="585" fill="#0f172a" font-family="Georgia, serif" font-size="28" font-weight="700" text-anchor="middle">2021</text>
+  <text x="800" y="610" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12" text-anchor="middle">NIA K-Award</text>
+  <line x1="950" y1="565" x2="950" y2="620" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="1050" y="585" fill="#0f172a" font-family="Georgia, serif" font-size="28" font-weight="700" text-anchor="middle">7+</text>
+  <text x="1050" y="610" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12" text-anchor="middle">Cohorts</text>
+
+  <!-- ===== RESEARCH ===== -->
+  <text x="80" y="700" fill="#1e40af" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" letter-spacing="2">RESEARCH</text>
+  <text x="80" y="740" fill="#0f172a" font-family="Georgia, serif" font-size="28" font-weight="700">Areas of Focus</text>
+
+  <!-- Research cards — 2x2 grid, clean white cards -->
+  <rect x="80" y="775" width="520" height="130" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="100" y="795" width="4" height="50" rx="2" fill="#1e40af"/>
+  <text x="120" y="818" fill="#0f172a" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600">Neuroimaging Biomarkers</text>
+  <text x="120" y="842" fill="#64748b" font-family="Georgia, serif" font-size="13">Identifying in-vivo structural brain changes in neurodegeneration</text>
+  <text x="120" y="862" fill="#64748b" font-family="Georgia, serif" font-size="13">using diffusion MRI and advanced imaging techniques.</text>
+
+  <rect x="630" y="775" width="520" height="130" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="650" y="795" width="4" height="50" rx="2" fill="#7c3aed"/>
+  <text x="670" y="818" fill="#0f172a" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600">Computational Genetics</text>
+  <text x="670" y="842" fill="#64748b" font-family="Georgia, serif" font-size="13">GWAS and polygenic risk scores mapping genetic susceptibility</text>
+  <text x="670" y="862" fill="#64748b" font-family="Georgia, serif" font-size="13">to brain structural changes in aging and Alzheimer's disease.</text>
+
+  <rect x="80" y="925" width="520" height="130" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="100" y="945" width="4" height="50" rx="2" fill="#059669"/>
+  <text x="120" y="968" fill="#0f172a" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600">White Matter Neurodegeneration</text>
+  <text x="120" y="992" fill="#64748b" font-family="Georgia, serif" font-size="13">Multi-site MRI harmonization for large-scale studies of white</text>
+  <text x="120" y="1012" fill="#64748b" font-family="Georgia, serif" font-size="13">matter decline in aging, with 2,600+ participants across 7 cohorts.</text>
+
+  <rect x="630" y="925" width="520" height="130" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="650" y="945" width="4" height="50" rx="2" fill="#d97706"/>
+  <text x="670" y="968" fill="#0f172a" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600">AI-Driven Brain Signatures</text>
+  <text x="670" y="992" fill="#64748b" font-family="Georgia, serif" font-size="13">Deep learning on imaging and genetics data to build predictive</text>
+  <text x="670" y="1012" fill="#64748b" font-family="Georgia, serif" font-size="13">brain age models and disease signatures.</text>
+
+  <!-- ===== PUBLICATIONS ===== -->
+  <line x1="80" y1="1100" x2="1120" y2="1100" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="80" y="1155" fill="#1e40af" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" letter-spacing="2">PUBLICATIONS</text>
+  <text x="80" y="1195" fill="#0f172a" font-family="Georgia, serif" font-size="28" font-weight="700">Selected Papers</text>
+
+  <!-- Pub list — clean, typographic -->
+  <text x="80" y="1245" fill="#0f172a" font-family="Georgia, serif" font-size="15" font-weight="700">White Matter Abnormalities and Cognition in Aging and Alzheimer Disease</text>
+  <text x="80" y="1268" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12">Peter C, ... Hohman TJ, Archer DB</text>
+  <text x="390" y="1268" fill="#1e40af" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">JAMA Neurology, 2025</text>
+  <line x1="80" y1="1288" x2="1120" y2="1288" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="80" y="1315" fill="#0f172a" font-family="Georgia, serif" font-size="15" font-weight="700">Longitudinal change in memory performance as an endophenotype for AD</text>
+  <text x="80" y="1338" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12">Archer DB, Eissman JM, ... Hohman TJ</text>
+  <text x="370" y="1338" fill="#1e40af" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">Alzheimer's &amp; Dementia, 2024</text>
+  <line x1="80" y1="1358" x2="1120" y2="1358" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="80" y="1385" fill="#0f172a" font-family="Georgia, serif" font-size="15" font-weight="700">A widespread visually-sensitive functional network in essential tremor</text>
+  <text x="80" y="1408" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12">Archer DB, Coombes SA, ... Vaillancourt DE</text>
+  <text x="380" y="1408" fill="#1e40af" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">Brain, 2018</text>
+  <line x1="80" y1="1428" x2="1120" y2="1428" stroke="#f1f5f9" stroke-width="1"/>
+
+  <text x="80" y="1455" fill="#0f172a" font-family="Georgia, serif" font-size="15" font-weight="700">Automated Imaging Differentiation in Parkinsonism (AID-P)</text>
+  <text x="80" y="1478" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12">Archer DB, Bricker JT, ... Vaillancourt DE</text>
+  <text x="370" y="1478" fill="#1e40af" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="500">The Lancet Digital Health, 2019</text>
+
+  <rect x="500" y="1510" width="200" height="40" rx="6" fill="none" stroke="#1e40af" stroke-width="1.5"/>
+  <text x="545" y="1536" fill="#1e40af" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="600">All Publications →</text>
+
+  <!-- ===== PROJECTS ===== -->
+  <line x1="80" y1="1590" x2="1120" y2="1590" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="80" y="1645" fill="#1e40af" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" letter-spacing="2">AFFILIATIONS</text>
+  <text x="80" y="1685" fill="#0f172a" font-family="Georgia, serif" font-size="28" font-weight="700">Projects</text>
+
+  <rect x="80" y="1720" width="250" height="90" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="205" y="1758" fill="#0f172a" font-family="Georgia, serif" font-size="20" font-weight="700" text-anchor="middle">VMAP</text>
+  <text x="205" y="1785" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="11" text-anchor="middle">Memory &amp; Aging Project</text>
+
+  <rect x="360" y="1720" width="250" height="90" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="485" y="1758" fill="#0f172a" font-family="Georgia, serif" font-size="20" font-weight="700" text-anchor="middle">VADRC</text>
+  <text x="485" y="1785" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="11" text-anchor="middle">AD Research Center</text>
+
+  <rect x="640" y="1720" width="250" height="90" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="765" y="1758" fill="#0f172a" font-family="Georgia, serif" font-size="20" font-weight="700" text-anchor="middle">CNT</text>
+  <text x="765" y="1785" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="11" text-anchor="middle">Neurogenomics Team</text>
+
+  <rect x="920" y="1720" width="250" height="90" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="1045" y="1758" fill="#0f172a" font-family="Georgia, serif" font-size="20" font-weight="700" text-anchor="middle">VALIANT</text>
+  <text x="1045" y="1785" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="11" text-anchor="middle">Vanderbilt Initiative</text>
+
+  <!-- ===== FOOTER ===== -->
+  <line x1="0" y1="1870" x2="1200" y2="1870" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="0" y="1870" width="1200" height="120" fill="#f8fafc"/>
+  <text x="80" y="1915" fill="#0f172a" font-family="Georgia, serif" font-size="14" font-weight="700">Derek B. Archer, PhD</text>
+  <text x="80" y="1940" fill="#64748b" font-family="Inter, system-ui, sans-serif" font-size="12">Vanderbilt University Medical Center · derek.archer@vumc.org</text>
+  <text x="1120" y="1940" fill="#94a3b8" font-family="Inter, system-ui, sans-serif" font-size="11" text-anchor="end">© 2025</text>
+
+  <!-- LABEL -->
+  <text x="600" y="2040" fill="#e2e8f0" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700" text-anchor="middle" letter-spacing="3">CONCEPT: WHITE PAPER</text>
+</svg>

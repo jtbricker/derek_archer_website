@@ -1,36 +1,15 @@
-# Website Mockups
+# Design Concepts for derekarcher.com
 
-Design mockups for derekarcher.com.
+Three distinct design directions for Derek Archer's academic website. Each takes a different approach to presenting a neuroscience researcher's digital presence.
 
-## Homepage
-
-### Hero / Above the Fold
-
-![Homepage hero](homepage-hero.png)
-
-### Full Page
-
-![Homepage full page](homepage-full.png)
+Pick a favorite (or mix elements from multiple) and we'll build it out.
 
 ---
 
-## Design System
+## Concepts
 
-| Token | Value | Usage |
-|-------|-------|-------|
-| `navy-950` | `#0a1628` | Page background |
-| `navy-900` | `#0f2240` | Card backgrounds |
-| `navy-800` | `#162d50` | Elevated surfaces |
-| `navy-700` | `#1e3a5f` | Borders, hover |
-| `teal` | `#14b8a6` | Primary accent, links, CTAs |
-| `gold` | `#f59e0b` | Awards, featured items |
-| `purple` | `#8b5cf6` | Interactive elements |
-| `slate-100` | `#f1f5f9` | Headings |
-| `slate-300` | `#cbd5e1` | Body text |
-| `slate-400` | `#94a3b8` | Secondary text |
-
-**Fonts:** Inter (headings), Source Sans 3 (body), JetBrains Mono (data)
-
-## Source Files
-
-- `homepage.html` — Standalone HTML mockup (open in browser for interactive preview)
+| Concept | Vibe | Preview |
+|---------|------|---------|
+| [Midnight Lab](midnight-lab.md) | Dark, data-forward, glowing science aesthetic | ![](midnight-lab.svg) |
+| [White Paper](white-paper.md) | Clean, light, elegant academic typography | ![](white-paper.svg) |
+| [Neural Net](neural-net.md) | Bold, dynamic, network-motif driven | ![](neural-net.svg) |

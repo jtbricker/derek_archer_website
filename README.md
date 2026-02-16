@@ -31,3 +31,9 @@ npm run preview    # Preview production build
 ## Deployment
 
 Pushes to `main` trigger a GitHub Actions workflow that builds the Astro site and deploys to GitHub Pages at [www.derekarcher.com](https://www.derekarcher.com).
+
+## Documentation
+
+- [Hosting & Domain Setup](docs/hosting.md) — DNS configuration, GitHub Pages setup, deployment pipeline
+- [Publications](docs/papers/PUBLICATIONS.md) — Curated first & last author papers with PDFs
+- [Papers TODO](docs/papers/TODO.md) — Papers still needing manual PDF upload

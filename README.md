@@ -40,6 +40,17 @@ Pushes to `main` trigger a GitHub Actions workflow that builds the Astro site an
 
 ## Current Status
 
-- The site currently ships as a static Astro build with five content pages (`/`, `/about/`, `/research/`, `/publications/`, `/contact/`).
-- Content is sourced from JSON files in `src/data/`.
-- The only documented outstanding task is the missing manual PDF upload listed in [Papers TODO](docs/papers/TODO.md).
+The site is fully built and deployable. All five content pages exist, content JSON files are populated, and the GitHub Actions pipeline and DNS are configured per `docs/hosting.md`.
+
+**What's done:**
+- Complete Astro 5 site with `/`, `/about/`, `/research/`, `/publications/`, `/contact/`, and `/404` pages
+- Content loaded from JSON files in `src/data/` (publications, CV, research areas, citations, collaborations)
+- Publication PDFs in `docs/papers/` served as static assets
+- GitHub Actions deploy pipeline (`.github/workflows/deploy.yml`)
+- DNS configured: Squarespace → GitHub Pages → `www.derekarcher.com`
+- Three design mockups explored (stored in `mockups/`, not shipped)
+
+**Outstanding tasks:**
+1. **Verify the site is live** — confirm GitHub Pages is enabled, DNS has propagated, and `www.derekarcher.com` resolves. Push to `main` and watch the Actions workflow.
+2. **Upload missing PDF** — one paper needs manual sourcing (JAMA Neurology 2025, PMID 40513084). See [Papers TODO](docs/papers/TODO.md) for the filename and instructions.
+3. **Interactive components (future)** — D3.js citation charts, Three.js 3D brain viewer, and a collaboration network graph were in the design mockups but not yet implemented. Dependencies (`d3`, `three`, `@react-three/fiber`) are already in `package.json`.
